@@ -42,7 +42,8 @@ const ListeningToCard = async (
 };
 
 const encodeText = (text: string): string => {
-	return text.replace(/&/g, '&amp;');
+	const truncatedText = text.length > 18 ? text.slice(0, 18) + '...' : text;
+	return truncatedText.replace(/&/g, '&amp;');
 };
 
 export default ListeningToCard;
