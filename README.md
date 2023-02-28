@@ -2,3 +2,25 @@
 
 Expose your currently listening song and display it on your profile.
 Written with <3 in Next.js and TypeScript
+
+## Usage
+
+To display your currently listening song, add an image to your readme with the following link:
+
+`https://lastfm-profile-readme.vercel.app/api/:username`
+
+Replace :username with your Last.fm username. The API will return an SVG image with your currently listening song details, which can be displayed in your Github profile readme.
+
+Here is an example of how it should look:
+
+```less
+![Currently listening to](https://lastfm-profile-readme.vercel.app/api/Monochromish)
+```
+
+![Currently listening to](https://lastfm-profile-readme.vercel.app/api/Monochromish)
+
+## Contributing
+
+Contributions are always welcome. If you have an idea or find a bug, feel free to open an issue or submit a pull request. However, please make sure to test your changes before creating the pull request.
+
+If you find this project useful, please consider giving it a star. It helps to spread the word and encourages us to continue improving it.
