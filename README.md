@@ -23,4 +23,4 @@ Here is an example of how it should look:
 
 Contributions are always welcome. If you have an idea or find a bug, feel free to open an issue or submit a pull request. However, please make sure to test your changes before creating the pull request.
 
-If you find this project useful, please consider giving it a star. It helps to spread the word and encourages us to continue improving it.
+If you find this project useful, please consider giving it a star.
