@@ -34,14 +34,20 @@ interface QueryParams {
 	textColor?: string;
 	isRounded?: boolean;
 	displayName?: boolean;
+	apiKey?: string;
 }
 
 export default async function handler(req: NextApiRequest, res: NextApiResponse<Response>) {
-	const apiKey = process.env.NEXT_PUBLIC_LASTFM_API;
 	const username = req.query.username as string;
 	const queryParams = req.query as QueryParams;
 
-	const { color = '000', textColor = 'fff', isRounded = false, displayName = false } = queryParams;
+	const {
+		color = '000',
+		textColor = 'fff',
+		isRounded = false,
+		displayName = false,
+		apiKey = process.env.NEXT_PUBLIC_LASTFM_API,
+	} = queryParams;
 
 	try {
 		const { data } = await axios.get<LastFMResponse>(

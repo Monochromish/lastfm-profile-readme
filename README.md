@@ -27,6 +27,7 @@ You can customize the image by adding query parameters to the link:
 - `textColor` - The color of the text (Hex color code) (Default: `#fff`)
 - `isRounded` - Whether the card should be rounded or not (Default: `false`)
 - `displayName` - Whether last.fm username should be displayed or not (Default: `false`)
+- `apiKey` - You can use your own Last.fm API key in case my preexisting one dies somehow
 
 Here is an example of how it should look with url queries:
 
