@@ -37,22 +37,26 @@ const ListeningToCard = async (
         <rect x="8" y="8" width="80" height="84" rx="16" />
       </clipPath>
       <image href="data:image/jpeg;base64,${artworkBase64}" x="16" y="15" width="64" height="64" clipPath="url(#artwork-clip)" />
-      <text font-family="system-ui" x="100" y="35" fill="${
+      <text font-family="system-ui" x="100" y="35" fill="#${
 				props.textColor
-			}" className="text-sm font-medium" dominantBaseline="middle">
+			}" dominantBaseline="middle" style="filter: brightness(0.6);">
         Currently Listening To
       </text>
-      <text font-family="system-ui" x="100" y="55" fill="#F9FAFB" className="text-lg font-bold" dominantBaseline="middle">
+      <text font-family="system-ui" x="100" y="55" fill="#${
+				props.textColor
+			}" dominantBaseline="middle">
         ${encodeText(name)}
       </text>
-      <text font-family="system-ui" x="100" y="70" fill="#F9FAFB" className="text-sm font-medium" dominantBaseline="middle">
+      <text font-family="system-ui" x="100" y="70" fill="#${
+				props.textColor
+			}" dominantBaseline="middle">
         By ${encodeText(artistName)} on ${encodeText(albumName)}
       </text>
 	   ${
 				props.displayName
-					? `<text font-family="system-ui" x="395" y="95" fill="${
+					? `<text font-family="system-ui" x="395" y="95" fill="#${
 							props.textColor
-					  }" className="text-sm font-medium" dominantBaseline="baseline" text-anchor="end">${
+					  }" dominantBaseline="baseline" text-anchor="end" style="filter: brightness(0.6);">${
 							username || ''
 					  }</text>`
 					: ''

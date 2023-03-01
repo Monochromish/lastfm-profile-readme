@@ -41,12 +41,7 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse<
 	const username = req.query.username as string;
 	const queryParams = req.query as QueryParams;
 
-	const {
-		color = '#000',
-		textColor = '#999',
-		isRounded = false,
-		displayName = false,
-	} = queryParams;
+	const { color = '000', textColor = 'fff', isRounded = false, displayName = false } = queryParams;
 
 	try {
 		const { data } = await axios.get<LastFMResponse>(
